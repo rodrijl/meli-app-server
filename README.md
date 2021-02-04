@@ -6,12 +6,15 @@ Here we have a server for meli-app(https://github.com/rodrijl/meli-app).
 
 - Nodejs
 - npm
-
+- MongoDB
+- Express
+- Moongose
 
 ## Available endpoints
 
 ### Create Product
-method: POST body: raw 
+url: localhost:8080/api/items
+method: POST body: raw
 ```
 author: {
         name: String,
@@ -37,18 +40,11 @@ author: {
 ```
 
 ### Search Product
-url: localhost:8080/item/:id
+url: localhost:8080/api/items?q=text
 mehod: GET 
-```
- item: {
-        id: String,
-        title: String,
-        price: {
-            currency: String,
-            amount: Number,
-            decimals: Number
-        }
-```
+
+GET by id: localhost:8080/api/items/:id
+
 ### Run the project
 
 First you need to install your dependencies, run the follwing command:
