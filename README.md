@@ -12,6 +12,7 @@ Here we have a server for meli-app(https://github.com/rodrijl/meli-app).
 
 ### Create Product
 method: POST body: raw 
+```
 author: {
         name: String,
         lastname: String
@@ -33,11 +34,12 @@ author: {
         description: { type: String, max: 1200 }
     }
 });
+```
 
 ### Search Product
 url: localhost:8080/item/:id
 mehod: GET 
-
+```
  item: {
         id: String,
         title: String,
@@ -46,4 +48,4 @@ mehod: GET
             amount: Number,
             decimals: Number
         }
-
+```
