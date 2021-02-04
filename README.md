@@ -1,6 +1,6 @@
 ## About this project
 
-Here we have a server for meli-app. 
+Here we have a server for meli-app(https://github.com/rodrijl/meli-app). 
 
 ## Tecnologies Applied
 
