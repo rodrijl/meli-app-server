@@ -18,7 +18,8 @@ exports.product_create = (req, res, next) => {
 };
 
 exports.products_search = (req, res) => {
-    Product.find({"item.title": new RegExp(req.query.q) }, 'author item', (err, products) => {
+    const text = req.query.q.toLowerCase();
+    Product.find({"item.title": new RegExp(text, "i") }, 'author item', (err, products) => {
         if (err) return next(err);
 
         const categories = products.reduce((list, product)=> {
