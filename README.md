@@ -49,3 +49,14 @@ mehod: GET
             decimals: Number
         }
 ```
+### Run the project
+
+First you need to install your dependencies, run the follwing command:
+
+### `npm install`
+
+Then to start the project run the follwing command:
+
+### `npm start
+
+Server is now running
